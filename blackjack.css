@@ -1,0 +1,68 @@
+body {
+  background-color: honeydew;
+}
+.container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  font-size: 50px;
+  color: rgb(238, 42, 42);
+}
+#row-box {
+  display: flexbox;
+  background-color: rgb(50, 112, 50);
+  color: floralwhite;
+  font-size: 30px;
+  min-height: 58vh;
+}
+.left-box {
+  border: 2px solid black;
+  padding: 0;
+}
+.right-box {
+  border: 2px solid black;
+  padding: 0;
+  /* background-image: url("cut/image_part_002.jpg");
+  background-size: cover; */
+}
+.your-score {
+  border-bottom: 2px solid black;
+}
+.dealer-score {
+  border-bottom: 2px solid black;
+}
+#your-box {
+  justify-content: center;
+}
+#dealer-box {
+  justify-content: center;
+}
+#your-box img {
+  padding: 20px;
+  width: 26%;
+  max-height: 25vh;
+}
+#dealer-box img {
+  padding: 20px;
+  width: 26%;
+  max-height: 25vh;
+}
+.buttons {
+  background-color: rgb(50, 112, 50);
+  height: 10vh;
+}
+.buttons .btn {
+  height: 40px;
+  align-self: center;
+}
+
+th {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+}

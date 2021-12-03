@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="blackjack.css" />
+  </head>
+  <body>
+    <div>
+      <div class="headerBlackjack text-center">
+        <h1>BLACKJACK</h1>
+        <span
+          id="blackjack-message"
+          style="
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+          "
+          >Let's Play</span
+        >
+      </div>
+
+      <div class="body container-fluid">
+        <div class="row mt-5" id="row-box">
+          <div class="col-6 text-center left-box">
+            <div class="your-score">You:<span id="your-score">0</span></div>
+            <div class="row" id="your-box"></div>
+          </div>
+          <div class="col-6 text-center right-box">
+            <div class="dealer-score">
+              Dealer:<span id="dealer-score">0</span>
+            </div>
+            <div class="row" id="dealer-box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center buttons">
+          <a class="btn btn-primary col-3 me-3 ms-3" id="hit-button">HIT</a>
+          <a class="btn btn-dark col-3 me-3 ms-3 text-white" id="stand-button"
+            >STAND</a
+          >
+          <a class="btn btn-danger col-3 me-3 ms-3" id="deal-button">DEAL</a>
+        </div>
+        <div class="row mt-5 text-center justify-content-center">
+          <table style="border: 1px solid black; width: 50vw">
+            <tr>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Draws</th>
+            </tr>
+            <tr>
+              <td><span id="wins">0</span></td>
+              <td><span id="losses">0</span></td>
+              <td><span id="draws">0</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="blackjack.js"></script>
+  </body>
+</html>
